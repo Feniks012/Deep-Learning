@@ -1,0 +1,9 @@
+torch
+torchvision
+torch_geometric
+snntorch
+scikit-learn
+matplotlib
+numpy
+torch-geometric
+snntorch

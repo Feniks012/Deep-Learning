@@ -1,8 +1,0 @@
-torch
-torchvision
-xgboost
-scipy
-scikit-learn
-matplotlib
-requests
-numpy
