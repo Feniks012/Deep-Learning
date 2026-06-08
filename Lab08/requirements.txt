@@ -1,9 +1,9 @@
 torch
 torchvision
-torch_geometric
 snntorch
+kagglehub
+pandas
+numpy
 scikit-learn
 matplotlib
-numpy
-torch-geometric
-snntorch
+seaborn
