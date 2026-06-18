@@ -1,0 +1,235 @@
+Dataset shape: (50000, 14)
+
+Columns:
+['bug_id', 'title', 'description', 'error_code', 'bug_category', 'bug_domain', 'tech_stack', 'severity', 'environment', 'developer_role', 'root_cause', 'suggested_fix', 'explanation', 'created_at']
+
+Text columns used:
+['bug_id', 'title', 'description', 'error_code', 'bug_category', 'tech_stack', 'severity', 'environment', 'developer_role', 'root_cause', 'suggested_fix', 'explanation', 'created_at']
+
+Classes:
+0 -> Backend Systems
+1 -> Cloud
+2 -> Data
+3 -> DevOps
+4 -> Mobile
+5 -> Web Development
+
+Vocab size: 12000
+Num classes: 6
+[VGG-like CNN] Epoch 1/5 | Loss: 1.8029
+[VGG-like CNN] Epoch 2/5 | Loss: 1.7921
+[VGG-like CNN] Epoch 3/5 | Loss: 1.7918
+[VGG-like CNN] Epoch 4/5 | Loss: 1.7918
+[VGG-like CNN] Epoch 5/5 | Loss: 1.7918
+VGG-like CNN
+Accuracy: 0.1685
+                 precision    recall  f1-score   support
+
+Backend Systems       0.00      0.00      0.00       676
+          Cloud       0.00      0.00      0.00       658
+           Data       0.17      1.00      0.29       674
+         DevOps       0.00      0.00      0.00       675
+         Mobile       0.00      0.00      0.00       662
+Web Development       0.00      0.00      0.00       655
+
+       accuracy                           0.17      4000
+      macro avg       0.03      0.17      0.05      4000
+   weighted avg       0.03      0.17      0.05      4000
+
+[Inception-like CNN] Epoch 1/5 | Loss: 1.8037
+[Inception-like CNN] Epoch 2/5 | Loss: 1.7920
+[Inception-like CNN] Epoch 3/5 | Loss: 1.7918
+[Inception-like CNN] Epoch 4/5 | Loss: 1.7918
+[Inception-like CNN] Epoch 5/5 | Loss: 1.7918
+Inception-like CNN
+Accuracy: 0.169
+                 precision    recall  f1-score   support
+
+Backend Systems       0.17      1.00      0.29       676
+          Cloud       0.00      0.00      0.00       658
+           Data       0.00      0.00      0.00       674
+         DevOps       0.00      0.00      0.00       675
+         Mobile       0.00      0.00      0.00       662
+Web Development       0.00      0.00      0.00       655
+
+       accuracy                           0.17      4000
+      macro avg       0.03      0.17      0.05      4000
+   weighted avg       0.03      0.17      0.05      4000
+
+[Spiking Neural Network] Epoch 1/5 | Loss: 1.7918
+[Spiking Neural Network] Epoch 2/5 | Loss: 1.7920
+[Spiking Neural Network] Epoch 3/5 | Loss: 1.7918
+[Spiking Neural Network] Epoch 4/5 | Loss: 1.7910
+[Spiking Neural Network] Epoch 5/5 | Loss: 1.7882
+Spiking Neural Network
+Accuracy: 0.1685
+                 precision    recall  f1-score   support
+
+Backend Systems       0.17      0.98      0.29       676
+          Cloud       0.17      0.00      0.01       658
+           Data       0.15      0.00      0.01       674
+         DevOps       0.20      0.01      0.02       675
+         Mobile       0.00      0.00      0.00       662
+Web Development       0.00      0.00      0.00       655
+
+       accuracy                           0.17      4000
+      macro avg       0.11      0.17      0.05      4000
+   weighted avg       0.12      0.17      0.05      4000
+
+Przykładowe predykcje — VGG-like CNN
+
+Próbka 1
+error_code: 403.0
+true bug_domain: Cloud
+pred bug_domain: Data
+
+Próbka 2
+error_code: 401.0
+true bug_domain: Mobile
+pred bug_domain: Data
+
+Próbka 3
+error_code: nan
+true bug_domain: Cloud
+pred bug_domain: Data
+
+Próbka 4
+error_code: 502.0
+true bug_domain: Mobile
+pred bug_domain: Data
+
+Próbka 5
+error_code: 503.0
+true bug_domain: Mobile
+pred bug_domain: Data
+
+Próbka 6
+error_code: 500.0
+true bug_domain: Data
+pred bug_domain: Data
+
+Próbka 7
+error_code: nan
+true bug_domain: DevOps
+pred bug_domain: Data
+
+Próbka 8
+error_code: 401.0
+true bug_domain: DevOps
+pred bug_domain: Data
+
+Próbka 9
+error_code: 400.0
+true bug_domain: Backend Systems
+pred bug_domain: Data
+
+Próbka 10
+error_code: 502.0
+true bug_domain: Mobile
+pred bug_domain: Data
+Przykładowe predykcje — Inception-like CNN
+
+Próbka 1
+error_code: 403.0
+true bug_domain: Cloud
+pred bug_domain: Backend Systems
+
+Próbka 2
+error_code: 401.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+
+Próbka 3
+error_code: nan
+true bug_domain: Cloud
+pred bug_domain: Backend Systems
+
+Próbka 4
+error_code: 502.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+
+Próbka 5
+error_code: 503.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+
+Próbka 6
+error_code: 500.0
+true bug_domain: Data
+pred bug_domain: Backend Systems
+
+Próbka 7
+error_code: nan
+true bug_domain: DevOps
+pred bug_domain: Backend Systems
+
+Próbka 8
+error_code: 401.0
+true bug_domain: DevOps
+pred bug_domain: Backend Systems
+
+Próbka 9
+error_code: 400.0
+true bug_domain: Backend Systems
+pred bug_domain: Backend Systems
+
+Próbka 10
+error_code: 502.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+Przykładowe predykcje — Spiking Neural Network
+
+Próbka 1
+error_code: 403.0
+true bug_domain: Cloud
+pred bug_domain: Backend Systems
+
+Próbka 2
+error_code: 401.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+
+Próbka 3
+error_code: nan
+true bug_domain: Cloud
+pred bug_domain: Backend Systems
+
+Próbka 4
+error_code: 502.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+
+Próbka 5
+error_code: 503.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+
+Próbka 6
+error_code: 500.0
+true bug_domain: Data
+pred bug_domain: Backend Systems
+
+Próbka 7
+error_code: nan
+true bug_domain: DevOps
+pred bug_domain: Backend Systems
+
+Próbka 8
+error_code: 401.0
+true bug_domain: DevOps
+pred bug_domain: Backend Systems
+
+Próbka 9
+error_code: 400.0
+true bug_domain: Backend Systems
+pred bug_domain: Backend Systems
+
+Próbka 10
+error_code: 502.0
+true bug_domain: Mobile
+pred bug_domain: Backend Systems
+PODSUMOWANIE
+VGG-like CNN: Accuracy = 0.1685
+Inception-like CNN: Accuracy = 0.1690
+Spiking Neural Network: Accuracy = 0.1685
