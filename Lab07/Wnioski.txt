@@ -1,0 +1,5 @@
+Dla zbioru MUTAG zwiększanie liczby warstw GCN poprawiło wyniki. Najlepszy rezultat osiągnął model 8-warstwowy (71,05%), co pokazuje, że głębsza sieć lepiej wykorzystuje strukturę grafu.
+Dla zbioru Actor najlepszy wynik uzyskano dla 1 warstwy (29,34%). Dodawanie kolejnych warstw nie poprawiło skuteczności, a wręcz ją obniżało. Może to wynikać ze zjawiska oversmoothing.
+Sieć SNN osiągnęła dobrą skuteczność dla FasgionMNIST (81.9%), co pokazuje, że dobrze radzi sobie z prostszymi obrazami.
+Dla CIFAR10 uzyskano jedynie 9,8% dokładności, czyli wynik zbliżony do losowego zgadywania. Oznacza to, że zastosowana architektura SNN była zbyt prosta dla bardziej złożonego zbioru danych.
+Wyniki pokazują, że skuteczność modeli zależy od rodzaju danych oraz odpowiedniego dobru architektury do rozwiązywanego problemu.

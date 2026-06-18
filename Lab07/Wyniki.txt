@@ -1,0 +1,86 @@
+DEVICE: cpu
+GNN GRAPH CLASSIFICATION - MUTAG
+
+Training GCN depth=1
+MUTAG | GCN 1 layers | Test Accuracy: 0.5526
+
+Training GCN depth=2
+MUTAG | GCN 2 layers | Test Accuracy: 0.5526
+
+Training GCN depth=3
+MUTAG | GCN 3 layers | Test Accuracy: 0.5526
+
+Training GCN depth=4
+MUTAG | GCN 4 layers | Test Accuracy: 0.5789
+
+Training GCN depth=5
+MUTAG | GCN 5 layers | Test Accuracy: 0.6842
+
+Training GCN depth=6
+MUTAG | GCN 6 layers | Test Accuracy: 0.6842
+
+Training GCN depth=7
+MUTAG | GCN 7 layers | Test Accuracy: 0.6842
+
+Training GCN depth=8
+MUTAG | GCN 8 layers | Test Accuracy: 0.7105
+GNN NODE CLASSIFICATION - ACTOR
+
+Training Actor GCN depth=1
+Actor | GCN 1 layers | Test Accuracy: 0.2934
+
+Training Actor GCN depth=2
+Actor | GCN 2 layers | Test Accuracy: 0.2546
+
+Training Actor GCN depth=3
+Actor | GCN 3 layers | Test Accuracy: 0.2507
+
+Training Actor GCN depth=4
+Actor | GCN 4 layers | Test Accuracy: 0.2539
+
+Training Actor GCN depth=5
+Actor | GCN 5 layers | Test Accuracy: 0.2546
+
+Training Actor GCN depth=6
+Actor | GCN 6 layers | Test Accuracy: 0.2618
+
+Training Actor GCN depth=7
+Actor | GCN 7 layers | Test Accuracy: 0.2533
+
+Training Actor GCN depth=8
+Actor | GCN 8 layers | Test Accuracy: 0.2546
+SNN - FASHIONMNIST
+[FashionMNIST SNN] Epoch 1/3 | Loss: 1.5016
+[FashionMNIST SNN] Epoch 2/3 | Loss: 0.7757
+[FashionMNIST SNN] Epoch 3/3 | Loss: 0.6055
+FashionMNIST SNN Test Accuracy: 0.8190
+SNN - CIFAR10
+[CIFAR10 SNN] Epoch 1/3 | Loss: 2.3730
+[CIFAR10 SNN] Epoch 2/3 | Loss: 2.3033
+[CIFAR10 SNN] Epoch 3/3 | Loss: 2.3026
+CIFAR10 SNN Test Accuracy: 0.0980
+FINAL SUMMARY
+
+MUTAG - Graph Classification:
+GCN 1 layers: 0.5526
+GCN 2 layers: 0.5526
+GCN 3 layers: 0.5526
+GCN 4 layers: 0.5789
+GCN 5 layers: 0.6842
+GCN 6 layers: 0.6842
+GCN 7 layers: 0.6842
+GCN 8 layers: 0.7105
+
+Actor - Node Classification:
+GCN 1 layers: 0.2934
+GCN 2 layers: 0.2546
+GCN 3 layers: 0.2507
+GCN 4 layers: 0.2539
+GCN 5 layers: 0.2546
+GCN 6 layers: 0.2618
+GCN 7 layers: 0.2533
+GCN 8 layers: 0.2546
+
+SNN:
+FashionMNIST Accuracy: 0.8190
+CIFAR10 Accuracy:      0.0980
