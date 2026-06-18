@@ -1,0 +1,8 @@
+Zadanie 1 GAN
+Udało się wytrenować modele GAN dla zbioru MNIST oraz CIFAR-10. W trakcie treningu generator stopniowo uczył się tworzyć obrazy coraz bardziej podobne do danych rzeczywistych. Dla zbioru MNIST generowane obrazy były wyraźniejsze i łatwiejsze do rozpoznania niż dla CIFAR-10. CIFAR-10 okazał się trudniejszym zbiorem ze względu na większą złożoność obrazów i kolorów
+
+Zadanie 2 Autoenkodery
+Autoenkoder skutecznie nauczył się kompresować oraz rekonstruować dane obrazowe i syntetyczne. Zwiększenie wymiaru przestrzeni ukrytej (lantent space) poprawiło jakość rekonstrukcji i obniżyło błąd MSE. Wizualizacja przestrzeni lateralnej pokazała że model potrafi wyodrębnić cechy danych i grupować podobne obiekty. Zastosowanie regularyzacji ( dropout/L2) ograniczyło ryzyko przeuczenia i poprawiło zdolność generalizacji modelu. Najlepsze wyniki uzyskano dla większych przestrzeni lateralnych, które zachowywały więcej informacji o danych wejściowych 
+
+Podsumowanie
+Zarówno GAN, jak i autoenkodery umożliwiają generowanie lub rekonstrukcje danych jednak realizują to w odmienny sposób. GAN lepiej sprawdza się przy tworzeniu nowych próbek przypominających dane uczące, natomiast autoenkoder skutecznie kompresuje dane i odtwarza ich najważniejsze cechy. Wyniki potwierdzają, że głębokie sieci neuronowe mogą być skutecznie wykorzystywane do generowania, kompresji i analizy danych obrazowych.
