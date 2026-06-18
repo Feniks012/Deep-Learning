@@ -1,0 +1,5 @@
+Zadanie 1:
+Model CNN dla zbioru CIFAR-100 uczył się poprawnie, ponieważ wraz z kolejnymi epokami spadała strata treningowa i walidacyjna, a dokładność walidacyjna rosła. Końcowa dokładność testowa wyniosła 39,48%, co jest rozsądnym wynikiem dla prostego modelu CNN i trudnego zbioru zawierającego aż 100 klas. Walidacja krzyżowa dała średni wynik około 32,80%, co pokazuje, że model działa stabilnie, ale jego skuteczność zależy od podziału danych. Przykładowe predykcje pokazują, że model często myli podobne klasy, np. obiekty naturalne lub krajobrazy
+
+Zadanie 2:
+Model PointNet dla ModelNet10 osiągnął bardzo dobry wynik testowy równy 90,42%. Strata treningowa i walidacyjna malały, a dokładność walidacyjna rosła, co oznacza skuteczny proces uczenia. Wyniki walidacji krzyżowej były stabilne i wyniosły średnio 87,15% +- 0,55%, co pokazuje że model dobrze generalizuje. Wizualizacja predykcji chmur punktów potwierdza że model poprawnie rozpoznawał przykładowe obiekty 3D
