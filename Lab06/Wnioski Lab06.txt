@@ -1,0 +1,5 @@
+Zbudowano pipeline, który generuje architektury CNN przy pomocy lokalnego modeli Ollama, trenuje je na CIFAR-10 i zapisuje uzyskane accuracy. Następnie architektury zostały zakodowane do wektorów liczbowych i wykorzystane do uczenia modeli surogatowych MLP oraz XGBoost.
+
+Na wykresie widać, że testowane architektury osiągnęły różne wyniki - większość mieściła się w zakresie około 25-35% accuracy, a najlepsze modele dochodziły do około 43-44%. Histogram pokazuje, że najwięcej architektur osiągało wyniki w okolicy 30-33%, natomiast bardzo dobre architektury pojawiały się rzadziej.
+
+Najważniejszy wniosek jest taki, że sam opis architektury zawiera inforamcje pozwalające w pewnym stopniu przewidywać jej jakość. Modele surogatowe mogą więc pomóc ograniczyć liczbę pełnych treningów CNN, bo najpierw oceniają potencjał architektury, a dopiero później wybrane modele są rzeczywiście trenowane. Wyniki nie są idealne, ale pokazują sens takiego podejścia do szybszego przeszukiwania architektur sieci neuronowych
