@@ -1,0 +1,12 @@
+Zadanie 5 polecenie :
+Zbudować do obu datasetow (split 1% i 10%) modele transfer learningu
+
+PointNet
+Przeprowadzone eksperymenty pokazały, że ilość danych treningowych ma kluczowy wpływ na skuteczność transfer learningu. Dla podziału 1% model osiągnął jedynie około 11% dokładności, co wskazuje na niewystarczającą liczbę przykąłdów do skutecznego uczenia. Po zwiększeniu zbioru do 10% danych dokładnośc wzrosła do 63,22% a przebieg uczenia był znacznie stabilniejszy. Oznacza to że PointNet skutecznie wykorzystuje transfer learning, jednak wymaga odpowiedzniej ilości danych , aby osiągnąć dobre wyniki klasyfikacji.
+
+Food101
+w przypadku Food 101 również można zauważyć duży wpływ 
+W przypadku zbioru Food101 również można zauważyć duży wpływ liczby danych treningowych na skuteczność transfer learningu. Dla podziału 1% oba modele osiągnęły niską dokładność, przy czym lepszy wynik uzyskał Feature Extraction (13,49%) niż Fine-Tuning (6,15%). Po zwiększeniu liczby danych do 10% nastąpiła wyraźna poprawa wyników. Najlepszy rezultat osiągnął model Fine-Tuning z dokładnością testową 59,66%, przewyższając Feature Extraction (48,77%). Oznacza to, że przy większej liczbie danych dodatkowe dostrajanie warstw modelu pozwala uzyskać lepszą jakość klasyfikacji.
+
+Końcowe wnioski
+Przeprowadzone eksperymenty pokazały, że skuteczność transfer learningu silnie zależy od liczby dostępnych danych treningowych. Zarówno dla ModelNet10, jak i Food101 modele trenowane na 10% danych osiągały znacznie lepsze wyniki niż przy wykorzystaniu jedynie 1% zbioru. Dodatkowo przy większej liczbie danych Fine-Tuning okazał się skuteczniejszy od samego Feature Extraction, ponieważ umożliwił lepsze dostosowanie modelu do analizowanego problemu. Dzięki temu transfer learning pozwolił uzyskać dobre wyniki przy znacznie krótszym czasie uczenia niż trenowanie modeli od początku.
